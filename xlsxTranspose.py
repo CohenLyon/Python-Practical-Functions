@@ -4,7 +4,7 @@ import wlwt
 
 # 功能：将xlsx文件行列转置
 # 输入：（需要装置的xlsx文件）
-def xlsxTranspose():
+def xlsxTranspose(xlsxFilename):
   workbook = xlrd.open_workbook(xlsxFilename)
   write_workbook = xlwt.Workbook(encoding="utf-8")
   worksheet = workbook.sheet()[0]  # 获取第一个sheet
