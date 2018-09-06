@@ -7,7 +7,7 @@ import wlwt
 def xlsxTranspose(xlsxFilename):
   workbook = xlrd.open_workbook(xlsxFilename)
   write_workbook = xlwt.Workbook(encoding="utf-8")
-  worksheet = workbook.sheet()[0]  # 获取第一个sheet
+  worksheet = workbook.sheets()[0]  # 获取第一个sheet
   write_worksheet = write_workbook.add_sheet("Sheet1", cell_overwrite_ok=True)
   for row in range(worksheet.nrows):
     row_content = worksheet.row_values(row)
