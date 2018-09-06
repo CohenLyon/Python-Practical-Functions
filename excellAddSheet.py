@@ -3,6 +3,16 @@ import pandas as pd
 from openpyxl import load_workbook
 
 
+# 功能：获取csv文件列表
+# 输入：csv文件路径
+def csvFileName(file_dir):
+  for root, dirs, files in os.walk(file_dir):
+    for file in files:
+      if os.path.splitext(file)[1] == ".csv":
+        csvFileList.append(os.path.join(root, file))
+  return csvFileList
+
+
 # 功能：将多个csv文件合并到一个Excel的不同Sheet中
 # 输入：csv文件路径
 def excelAddSheet(csvFilePath):
