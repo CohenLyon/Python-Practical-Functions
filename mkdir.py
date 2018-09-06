@@ -10,3 +10,5 @@ def mkdir(filePath):
     print("Create the new folder successfully.")
   else:
     print("The folder already exists.")
+    
+  os.startfile(filePath)  # 打开创建的新文件夹
