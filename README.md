@@ -11,7 +11,7 @@ This repository aims to collect small Python practical functions.
 ### Others
 * 创建新文件夹并打开：mkdir.py
 
-表头  | 表头  | 表头
+表头 | 表头 | 表头
  ---- | ----- | ------  
  单元格内容  | 单元格内容 | 单元格内容 
  单元格内容  | 单元格内容 | 单元格内容
